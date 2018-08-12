@@ -1,0 +1,3 @@
+[run]
+source = genaf_patho
+omit = genaf_patho/test*

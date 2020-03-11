@@ -27,8 +27,8 @@ def update_sample( sample, r ):
         dict(
             case_detection = r.get('PASSIVE_DETECTION', None),
             gender = r.get('GENDER', 'X').strip(),
-            method = r.get('BLOOD_WITHDRAWAL', 'NA').strip(),
-            storage = r.get('BLOOD_STORAGE', 'NA').strip(),
+            method = r.get('BLOOD_WITHDRAWAL', 'NA').strip() or 'NA',
+            storage = r.get('BLOOD_STORAGE', 'NA').strip() or 'NA',
             microscopy = r.get('MICROSCOPY_IDENTITY', 'X').strip() or 'X',
             pcr = r.get('PCR_IDENTITY', 'X').strip() or 'X',
             pcr_method = r.get('PCR_METHOD', 'NA').strip(),

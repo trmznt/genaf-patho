@@ -15,3 +15,4 @@ class DBHandler(get_dbhandler_class()):
             setup(self)
             cerr('[genaf-patho] Database has been initialized')
 
+DBHandler.Batch.set_sample_class(PathoSample)
